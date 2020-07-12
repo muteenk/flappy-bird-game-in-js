@@ -15,8 +15,8 @@
     margin: 20px auto;
     background-image: url(../bg.jpg);
     background-size: cover;
-    width: 600px;
-    height: 400px;
+    width: 420px;
+    height: 300px;
     border: 2px solid black;
 }
 
@@ -33,18 +33,15 @@
     text-align: center;
 }
 
-p{
-    text-align: center;
-}
-
 .btn:hover{
     background-color: rgb(240, 52, 52);
+}
+
+p{
+    text-align: center;
 }
 
 .fa{
     margin: 5px;
     background-color: rgb(231, 155, 155);
 }
-
-
-

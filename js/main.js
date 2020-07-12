@@ -6,6 +6,8 @@ const ctx = canvas.getContext("2d");
 canvas.width = 600;
 canvas.height = 400;
 
+
+
 let spacePressed = false;
 let angle = 0;
 let hue = 0;
@@ -46,6 +48,8 @@ animate();
 
 
 
+//CONTROLS FOR KEYBOARD
+
 window.addEventListener("keydown", function(e){
     if(e.code === "Space"){
         spacePressed = true;
@@ -58,6 +62,29 @@ window.addEventListener("keyup", function(e){
         spacePressed = false;
     }
 })         
+
+
+//CONTROLS FOR MOUSE
+
+window.addEventListener("mousedown", function(){
+    spacePressed = true;
+})
+
+window.addEventListener("mouseup", function(){
+    spacePressed = false;
+})
+
+
+
+//CONTROLS FOR TOUCH SCREEN
+
+window.addEventListener("touchstart", function(){
+    spacePressed = true;
+})
+
+window.addEventListener("touchend", function(){
+    spacePressed = false;
+})
 
 const bang = new Image();
 bang.src = "bang.png";

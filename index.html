@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" media="Screen and (min-width: 626px)"  href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 626px) and (min-width: 450px)" href="css/tab.css">
+    <link rel="stylesheet" media="(max-width: 450px) and (min-width: 320px)" href="css/phone.css">
 </head>
 
-<body>
-    <canvas id="canvas1"></canvas>
+<body style="user-select: none;" onmousedown = 'return false' onselectstart = 'return false'>
+    <div id="panel">
+        <canvas id="canvas1"></canvas>
+    </div>
 
+    <p>Controls:<br>PHONE => HOLD THE SCREEN TO MAKE THE BIRD RISE <br>PC => HOLD SPACEBAR/LEFT-MOUSE-BUTTON TO MAKE THE BIRD RISE </p><br>
+
+    <a href="" id="restart" class="btn">RESTART<i class="fa fa-repeat"></i></a>
+
+    <p>DEVELOPED BY MUTEEN KUNDANGAR</p>  
 
 
     <script src="js/bird.js"></script>
